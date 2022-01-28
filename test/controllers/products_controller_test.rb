@@ -18,7 +18,11 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create product" do
     assert_difference('Product.count') do
-      post products_url, params: { product: { description: @product.description, image_url: @product.image_url, price: @product.price, title: @title } }
+      post products_url, params: { product:
+        { description: @product.description,
+          image_url: @product.image_url,
+          price: @product.price,
+          title: @title } }
     end
 
     assert_redirected_to product_url(Product.last)
@@ -35,7 +39,11 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update product" do
-    patch product_url(@product), params: { product: { description: @product.description, image_url: @product.image_url, price: @product.price, title: @title } }
+    patch product_url(@product), params: { product:
+      { description: @product.description,
+        image_url: @product.image_url,
+        price: @product.price,
+        title: @title } }
     assert_redirected_to product_url(@product)
   end
 
@@ -46,4 +54,10 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
 
     assert_redirected_to products_url
   end
+
+  #test "these things should be there" do
+  #  assert_select 'nav.side_nav a', minimum: 4
+  #  assert_select 'main h1', 'Products'
+  #  assert_select 'table tbody tr', 3
+  #end
 end
