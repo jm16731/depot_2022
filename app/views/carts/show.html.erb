@@ -4,7 +4,7 @@
 	<% end %>
 	<h2>Your Cart</h2>
 	<table>
-		<% @cart.line_items.each do |line_item %>
+		<% @cart.line_items.each do |line_item| %>
 			<tr>
 				<td class="quantity"><%= line_item.quantity %></td>
 				<td><%= line_item.product.title %></td>
