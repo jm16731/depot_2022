@@ -19,7 +19,7 @@ class OrderMailer < ApplicationMailer
   #
   def shipped(order)
   	@order = order
-    
-  	mail to: order.email, subject 'Pragmatic Store Order Shipped'
+
+  	mail to: order.email, subject: 'Pragmatic Store Order Shipped'
   end
 end
