@@ -11,7 +11,7 @@ class LineItemsTest < ApplicationSystemTestCase
   end
 
   test "creating a Line item" do
-    visit line_items_url
+    visit line_items_url#controller rb:26
     click_on "New Line Item"
 
     fill_in "Cart", with: @line_item.cart_id
