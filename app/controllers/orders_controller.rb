@@ -3,6 +3,7 @@ class OrdersController < ApplicationController
   include CurrentCart
     before_action :set_cart, only: [:new, :create]
     before_action :ensure_cart_isnt_empty, only: :new
+    skip_before_action :authorize, only: [:new, :create]
 
   # GET /orders or /orders.json
   def index
