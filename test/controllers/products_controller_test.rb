@@ -22,7 +22,7 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
         { description: @product.description,
           image_url: @product.image_url,
           price: @product.price,
-          title: @title } }
+          title: "The Great Book 999999999" } }
     end
 
     assert_redirected_to product_url(Product.last)

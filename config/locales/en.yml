@@ -67,8 +67,8 @@ en:
     form:
       name:	"Name"
       address_html:	"Address"
-      email:	"E-mail"
-      pay_type:	"Pay with"
+      email:	"Email"
+      pay_type:	"Pay type"
       pay_prompt_html:	"Select a payment method"
       submit:	"Place Order"
       pay_types:
@@ -76,10 +76,10 @@ en:
         credit_card:	"Credit Card"
         purchase_order:	"Purchase Order"
       check_pay_type:
-        routing_number:	"Routing Number"
-        account_number:	"Account Number"
+        routing_number:	"Routing #"
+        account_number:	"Account #"
       credit_card_pay_type:
-        cc_number:	"CC Number"
+        cc_number:	"CC #"
         expiration_date:	"Expiry"
       purchase_order_pay_type:
-        po_number:	"PO Number"
+        po_number:	"PO #"
